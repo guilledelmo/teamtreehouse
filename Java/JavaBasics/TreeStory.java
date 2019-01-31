@@ -10,7 +10,8 @@ public class TreeStory {
             adjective - A description used to modify or describe a noun
             Enter your amazing code here!
         */
-        int age = 12;
+        String ageAsString = console.readLine("How old are you?  ");
+        int age = Integer.parseInt(ageAsString);
         if (age < 13) {
           console.printf("Sorry, you must be at least 13 to use this program\n");
           System.exit(0);
